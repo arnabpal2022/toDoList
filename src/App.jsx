@@ -11,7 +11,7 @@ function App() {
 
   function handleChange(event){
     const newTask = event.target.value;
-    updateTask(() => newTask);
+    updateTask(newTask);
     console.log(task);
   }
 
@@ -21,8 +21,8 @@ function App() {
         return [...prevItems, task]
       });
       updateTask("");
+      event.preventDefault();
     }
-    event.preventDefault();
   }
 
   const handleKeyDown = (event) => {
@@ -32,6 +32,7 @@ function App() {
           return [...prevItems, task]
         });
         updateTask("");
+        event.preventDefault();
       }
     }
   };
@@ -50,7 +51,7 @@ function App() {
         
         <div id="newtask">
           <div style={{textAlign:'center', marginBottom:'10px'}}>My To-Do-List</div>
-          <input type="text" placeholder="Task to be done.." onChange={handleChange} onKeyDown={handleKeyDown}/>
+          <input type="text" placeholder="Task to be done.." onChange={handleChange} onKeyDown={handleKeyDown} value={task}/>
           <button onClick ={handleClick}>Add It</button>
         </div>
         <div id="tasks">
