@@ -54,15 +54,21 @@ npm run dev
 - Front-end:
 
   1. HTML
+  
   2. CSS
+  
   3. JavaScript
+  
   4. React (JavaScript library)
 
 - Other tools and dependencies:
 
   1. Vite (Bundler)
+  
   2. npm (Package manager)
+  
   3. Git (Version control)
+  
   4. Vercel (Deployment Site)
 
 
@@ -71,9 +77,13 @@ npm run dev
 We welcome contributions to improve the My To-Do List App. To contribute, please follow these steps:
 
 1\. Fork the repository.
+
 2\. Create a new branch for your feature/bugfix: `git checkout -b feature-name`.
+
 3\. Make your changes and commit them: `git commit -m "Description of changes"`.
+
 4\. Push your changes to the new branch: `git push origin feature-name`.
+
 5\. Submit a pull request, explaining your changes in detail.
 
 We appreciate your help in making this app better!
