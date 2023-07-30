@@ -59,7 +59,7 @@ npm run dev
 
 - Other tools and dependencies:
 
-  Vite (Bundler), npm (Package manager), Git (Version control), Vercel (Deployment Site)
+  Vite (Bundler), npm (Package manager), Git (Version control), Vercel (Deployment Site)
 
 
 ## Contributing
