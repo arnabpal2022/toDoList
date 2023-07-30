@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ToDoList from "./ToDoList"
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [task, updateTask] = useState("");
@@ -22,6 +24,7 @@ function App() {
       });
       updateTask("");
       event.preventDefault();
+      notify("Task is added successfully");
     }
   }
 
@@ -33,6 +36,7 @@ function App() {
         });
         updateTask("");
         event.preventDefault();
+        notify("Task is added successfully");
       }
     }
   };
@@ -43,6 +47,20 @@ function App() {
         return index !== id;
       });
     });
+    notify("Task is deleted successfully");
+  }
+
+  const notify = (message) =>{
+    toast.success(message, {
+      position: "bottom-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   }
 
   return (
@@ -50,7 +68,7 @@ function App() {
       <div className="container">
         
         <div id="newtask">
-          <div style={{textAlign:'center', marginBottom:'10px'}}>My To-Do-List</div>
+          <div style={{textAlign:'center', marginBottom:'10px', fontSize:"30px"}}>My To-Do-List</div>
           <input type="text" placeholder="Task to be done.." onChange={handleChange} onKeyDown={handleKeyDown} value={task}/>
           <button onClick ={handleClick}>Add It</button>
         </div>
@@ -61,7 +79,20 @@ function App() {
           <p className="footer black">Click on the Completed work to Delete</p>
           <p className="footer">Made by Arnab, Copyright ©{year} Arnab Pal. All Rights Reserved.</p>
         </div>
-        
+
+        <ToastContainer
+          position="bottom-center"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
+
       </div>
     </>
   )

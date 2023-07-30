@@ -5,7 +5,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
 
 }
 body{
@@ -78,6 +77,7 @@ body{
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     width: 100%;
     position: relative;
+    font-size: 30px;
 }
 .task{
     background-color: #ffffff;
