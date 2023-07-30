@@ -2,14 +2,14 @@
 *:before,
 *:after{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
 
 }
 body{
     height: 100vh;
-    width:100vw;
+    width:100%;
     background: linear-gradient(
         135deg,
         #54ec52,
