@@ -54,24 +54,12 @@ npm run dev
 ## Technologies Used
 
 - Front-end:
-
-  1. HTML
   
-  2. CSS
-  
-  3. JavaScript
-  
-  4. React (JavaScript library)
+  HTML, CSS, JavaScript, React (JavaScript library)
 
 - Other tools and dependencies:
 
-  1. Vite (Bundler)
-  
-  2. npm (Package manager)
-  
-  3. Git (Version control)
-  
-  4. Vercel (Deployment Site)
+  Vite (Bundler), npm (Package manager), Git (Version control), Vercel (Deployment Site)
 
 
 ## Contributing
