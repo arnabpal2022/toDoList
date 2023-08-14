@@ -76,6 +76,7 @@ function App() {
           <ul>
           {items.map((toDoItem,index) => <ToDoList key={index} id={index} text={toDoItem} onChecked={deleteItem}/>)}
           </ul>
+          <p className="footer black">Write Task and Click 'Add it" or Press Enter</p>
           <p className="footer black">Click on the Completed work to Delete</p>
           <p className="footer">Made by Arnab, Copyright ©{year} Arnab Pal. All Rights Reserved.</p>
         </div>
